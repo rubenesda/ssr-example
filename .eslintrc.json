@@ -6,9 +6,9 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended" // put it for working with plugin ESLint vscode
     ],
-    "parser": "@typescript-eslint/parser",
+    "parser": "@typescript-eslint/parser", // put it for working with plugin ESLint vscode
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
