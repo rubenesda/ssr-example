@@ -1,15 +1,10 @@
 // eslint-disable-next-line
 const path = require('path');
 // eslint-disable-next-line
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-// eslint-disable-next-line
 const nodeExternals = require('webpack-node-externals');
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  devServer:{
-    port: 3000,
-  },
   entry: './server/index',
   output: {
     // eslint-disable-next-line no-undef
@@ -33,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['file-loader']
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -41,9 +36,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
-  ]
 };

@@ -6,7 +6,7 @@ const html = ({ body }: { body: string }):string => `
     <body style="margin:0">
       <div id="app">${body}</div>
     </body>
-    <script src="js/client.js" defer></script>
+    <script src="bundle.js" defer></script>
   </html>
 `;
 

@@ -1,13 +1,7 @@
 // eslint-disable-next-line
 const path = require('path');
-// eslint-disable-next-line
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 // eslint-disable-next-line no-undef
 module.exports = {
-  devServer:{
-    port: 3000,
-  },
   entry: './src/index',
   output: {
     // eslint-disable-next-line no-undef
@@ -34,9 +28,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
-  ]
 };
